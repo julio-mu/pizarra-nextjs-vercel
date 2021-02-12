@@ -1,7 +1,7 @@
 import { Box, Button, Typography, Paper } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import Link from 'next/link';
-import PublicHeaderStyles from './styles';
+import PublicHeaderStyles from './publicHeader.styles.js';
 
 function PublicHeader({ classes }) {
 	return (
@@ -15,7 +15,9 @@ function PublicHeader({ classes }) {
 						<Button variant="text">Cursos</Button>
 					</Box>
 					<Box>
-						<Button variant="text">Ingresar</Button>
+						<Link href="/loginscreen">
+							<Button variant="text">Ingresar</Button>
+						</Link>
 					</Box>
 					<Box>
 						<Button variant="contained" color="primary">
@@ -24,21 +26,6 @@ function PublicHeader({ classes }) {
 					</Box>
 				</Box>
 			</Paper>
-			<style jsx>
-				{`
-					.wrapper {
-						display: flex;
-						flex-direction: row;
-						align-items: center;
-						justify-content: space-between;
-						padding: 16px 80px;
-					}
-					.logo {
-						text-decoration: none;
-						color: #fcfcfc;
-					}
-				`}
-			</style>
 		</>
 	);
 }
