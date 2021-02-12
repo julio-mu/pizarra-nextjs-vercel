@@ -13,7 +13,7 @@ export default function Home() {
 						flexDirection: 'row',
 						justifyContent: 'space-around',
 						alignItems: 'center',
-						marginTop: '100px',
+						marginTop: '80px',
 					}}
 				>
 					<Typography variant="h3" style={{ maxWidth: '700px' }}>
