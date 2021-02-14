@@ -32,7 +32,7 @@ const LogIn = ({ classes }) => {
 						placeholder="********"
 					></TextField>
 				</Box>
-				<Link href="/dashboard" mb={1}>
+				<Link href="/dashboard">
 					<Button
 						variant="contained"
 						color="primary"

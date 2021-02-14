@@ -15,6 +15,7 @@ import {
 	Toolbar,
 } from '@material-ui/core';
 import { ArrowDropDown } from '@material-ui/icons';
+import Link from 'next/link';
 
 const CoursesTable = ({ classes }) => {
 	return (
@@ -43,7 +44,7 @@ const CoursesTable = ({ classes }) => {
 				</TableHead>
 				<TableBody>
 					<TableRow>
-						<Link to="/courseprofile">
+						<Link href="/courseprofile">
 							<TableCell align="left">Marketing de afiliados facil</TableCell>
 						</Link>
 						<TableCell align="left">Marketing</TableCell>
