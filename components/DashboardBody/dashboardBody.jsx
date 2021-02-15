@@ -1,7 +1,7 @@
 import { withStyles } from '@material-ui/styles';
 import { Box, Button, Typography } from '@material-ui/core';
-import CoursesTable from '../../Components/CoursesTable/coursesTable';
 import DashboardBodyStyles from './dashboardBody.styles';
+import CoursesTable from '../CoursesTable/coursesTable';
 
 const DashboardBody = ({ classes }) => {
 	return (
