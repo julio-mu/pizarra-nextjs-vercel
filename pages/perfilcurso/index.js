@@ -1,4 +1,3 @@
-import { withStyles } from '@material-ui/styles';
 import DashboardHeader from '../../components/DashboardHeader/dashboardHeader';
 import DashboardSidebar from '../../components/DashboardSidebar/dashboardSidebar';
 import {
@@ -10,7 +9,6 @@ import {
 	Paper,
 	Chip,
 } from '@material-ui/core';
-import PerfilCursoStyles from './perfilCurso.styles';
 import {
 	KeyboardArrowLeft,
 	Instagram,
@@ -23,14 +21,25 @@ import {
 import CoursesTable from '../../components/CoursesTable/coursesTable';
 import Link from 'next/link';
 
-const PerfilCurso = ({ classes }) => {
+const PerfilCurso = () => {
 	return (
 		<Box>
 			<DashboardHeader />
 			<Box style={{ display: 'flex', flexDirection: 'row' }}>
 				<DashboardSidebar />
-				<Box className={classes.root}>
-					<Box p={2} pt={3} pb={1} className={classes.goback}>
+				<Box
+					style={{ display: 'flex', flexDirection: 'column', width: '100%' }}
+				>
+					<Box
+						p={2}
+						pt={3}
+						pb={1}
+						style={{
+							display: 'flex',
+							flexDirection: 'row',
+							justifyContent: 'flex-start',
+						}}
+					>
 						<KeyboardArrowLeft variant="default"></KeyboardArrowLeft>
 						<Typography variant="body2">Volver</Typography>
 					</Box>
@@ -60,22 +69,32 @@ const PerfilCurso = ({ classes }) => {
 							Descubri la mejor forma de ganar ingresos extras desde tu casa
 						</Typography>
 					</Box>
-					<Grid spacing={2} container className={classes.imagescontainer}>
+					<Grid
+						spacing={2}
+						container
+						style={{
+							display: 'flex',
+							flexDirection: 'row',
+							justifyContent: 'flex-start',
+							width: '100%',
+							padding: '16px',
+						}}
+					>
 						<Grid item>
 							<img
-								className={classes.images}
+								style={{ height: '300px', width: '390px', objectFit: 'cover' }}
 								src="https://upload.wikimedia.org/wikipedia/commons/9/9a/PNG_transparency_demonstration_2.png"
 							></img>
 						</Grid>
 						<Grid item>
 							<img
-								className={classes.images}
+								style={{ height: '300px', width: '390px', objectFit: 'cover' }}
 								src="https://upload.wikimedia.org/wikipedia/commons/9/9a/PNG_transparency_demonstration_2.png"
 							></img>
 						</Grid>
 						<Grid item>
 							<img
-								className={classes.images}
+								style={{ height: '300px', width: '390px', objectFit: 'cover' }}
 								src="https://upload.wikimedia.org/wikipedia/commons/9/9a/PNG_transparency_demonstration_2.png"
 							></img>
 						</Grid>
@@ -206,4 +225,4 @@ const PerfilCurso = ({ classes }) => {
 	);
 };
 
-export default withStyles(PerfilCursoStyles)(PerfilCurso);
+export default PerfilCurso;

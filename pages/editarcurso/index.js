@@ -1,11 +1,9 @@
 import { Box, Stepper, Step, StepLabel, StepContent } from '@material-ui/core';
-import { withStyles } from '@material-ui/styles';
 import DashboardHeader from '../../components/DashboardHeader/dashboardHeader';
 import DashboardSidebar from '../../components/DashboardSidebar/dashboardSidebar';
-import EditarCursoStyles from './editarCurso.styles';
 import CourseSteps from '../../components/CourseSteps/index';
 
-function EditarCurso() {
+export default function EditarCurso() {
 	return (
 		<Box>
 			<DashboardHeader />
@@ -18,5 +16,3 @@ function EditarCurso() {
 		</Box>
 	);
 }
-
-export default withStyles(EditarCursoStyles)(EditarCurso);
