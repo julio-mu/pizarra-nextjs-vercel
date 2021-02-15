@@ -14,7 +14,7 @@ export default (theme) => ({
 		flexDirection: 'row',
 		justifyContent: 'flex-start',
 		width: '100%',
-		padding: theme.spacing(2),
+		padding: '16px',
 	},
 	individualimagecontainer: {
 		width: '33%',
