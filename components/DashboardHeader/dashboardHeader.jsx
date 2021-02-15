@@ -12,7 +12,7 @@ const DashboardHeader = ({ classes }) => {
 				<Typography>PIZARRA</Typography>
 			</Link>
 			<Link href="/">
-				<Settings color="action" fontSize="medium"></Settings>
+				<Settings color="action" fontSize="default"></Settings>
 			</Link>
 		</Paper>
 	);

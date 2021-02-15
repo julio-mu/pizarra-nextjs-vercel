@@ -16,6 +16,7 @@ import {
 } from '@material-ui/core';
 import { ArrowDropDown } from '@material-ui/icons';
 import Link from 'next/link';
+import React, { useState } from 'react';
 
 const CoursesTable = ({ classes }) => {
 	return (
@@ -31,7 +32,7 @@ const CoursesTable = ({ classes }) => {
 					5 filas
 				</Button>
 			</Box>
-			<Table size="medium" style={{ Width: '100%' }}>
+			<Table size="default" style={{ Width: '100%' }}>
 				<TableHead>
 					<TableRow>
 						<TableCell align="left">Curso</TableCell>
@@ -43,16 +44,18 @@ const CoursesTable = ({ classes }) => {
 					</TableRow>
 				</TableHead>
 				<TableBody>
-					<TableRow>
-						<Link href="/courseprofile">
-							<TableCell align="left">Marketing de afiliados facil</TableCell>
-						</Link>
-						<TableCell align="left">Marketing</TableCell>
-						<TableCell align="left">Online</TableCell>
-						<TableCell align="left">0/10</TableCell>
-						<TableCell align="left">05/09/2021</TableCell>
-						<TableCell align="left">Por realizar</TableCell>
-					</TableRow>
+					<Link href="perfilcurso">
+						<TableRow>
+							<Link href="/perfilcurso">
+								<TableCell align="left">Marketing de afiliados facil</TableCell>
+							</Link>
+							<TableCell align="left">Marketing</TableCell>
+							<TableCell align="left">Online</TableCell>
+							<TableCell align="left">0/10</TableCell>
+							<TableCell align="left">05/09/2021</TableCell>
+							<TableCell align="left">Por realizar</TableCell>
+						</TableRow>
+					</Link>
 				</TableBody>
 				<TableFooter>
 					<TableRow>

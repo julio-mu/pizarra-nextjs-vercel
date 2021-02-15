@@ -6,25 +6,23 @@ import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 
 const dashboardSidebar = ({ classes }) => {
 	return (
-		<Box fullWidth className={classes.root}>
+		<Box className={classes.root}>
 			<Box p={2} className={classes.profile}>
 				<Avatar />
 				<Box ml={1}>
 					<Typography variant="subtitle1">Julio Mayorga Ubiría</Typography>
 				</Box>
 			</Box>
-			<Box fullWidth mt={4} className={classes.buttonsContainer}>
+			<Box mt={4} className={classes.buttonsContainer}>
 				<Button
-					fullwidth
-					variant="primary"
+					variant="text"
 					className={classes.sidebarButtons}
 					startIcon={<School />}
 				>
 					Cursos
 				</Button>
 				<Button
-					fullwidth
-					variant="primary"
+					variant="text"
 					className={classes.sidebarButtons}
 					startIcon={<MonetizationOnIcon />}
 				>
