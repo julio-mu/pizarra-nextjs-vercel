@@ -169,7 +169,7 @@ export default function CourseSteps() {
 					<Step key={label}>
 						<StepLabel>{label}</StepLabel>
 						<StepContent>
-							<Typography>{getStepContent(index)}</Typography>
+							<Box>{getStepContent(index)}</Box>
 							<div className={classes.actionsContainer}>
 								<Button
 									disabled={activeStep === 0}
