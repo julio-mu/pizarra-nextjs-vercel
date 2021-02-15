@@ -14,7 +14,10 @@ import {
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		width: '100%',
+		width: '80vw',
+	},
+	steperContainer: {
+		backgroundColor: '#303030',
 	},
 	button: {
 		marginTop: theme.spacing(1),
@@ -129,7 +132,17 @@ function getStepContent(step) {
 				</div>
 			);
 		case 1:
-			return 'An ad group contains one or more ads which target a shared set of keywords.';
+			return (
+				<Box display="flex" flexDirection="column">
+					<Typography variant="subtitle1">Descripcion</Typography>
+					<TextField
+						variant="outlined"
+						multiline
+						placeholder="$1950"
+						style={{ width: '100%', height: '100px' }}
+					></TextField>
+				</Box>
+			);
 		case 2:
 			return `Try out different ad text to see what brings in the most customers,
               and learn how to enhance your ads using features like ad extensions.
@@ -164,7 +177,11 @@ export default function CourseSteps() {
 
 	return (
 		<div className={classes.root}>
-			<Stepper activeStep={activeStep} orientation="vertical">
+			<Stepper
+				className={classes.steperContainer}
+				activeStep={activeStep}
+				orientation="vertical"
+			>
 				{steps.map((label, index) => (
 					<Step key={label}>
 						<StepLabel>{label}</StepLabel>
@@ -184,7 +201,7 @@ export default function CourseSteps() {
 									onClick={handleNext}
 									className={classes.button}
 								>
-									{activeStep === steps.length - 1 ? 'Finalizar' : 'Siguiente'}
+									{activeStep === steps.length - 1 ? 'Finalizar' : 'Continuar'}
 								</Button>
 							</div>
 						</StepContent>

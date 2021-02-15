@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Typography } from '@material-ui/core';
+import { Avatar, Box, Button, Typography, Paper } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import DashboardSidebarStyles from './dashboardSidebar.styles';
 import { School } from '@material-ui/icons';
@@ -6,7 +6,7 @@ import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 
 const dashboardSidebar = ({ classes }) => {
 	return (
-		<Box className={classes.root}>
+		<Paper className={classes.root}>
 			<Box p={2} className={classes.profile}>
 				<Avatar />
 				<Box ml={1}>
@@ -29,7 +29,7 @@ const dashboardSidebar = ({ classes }) => {
 					Pagos
 				</Button>
 			</Box>
-		</Box>
+		</Paper>
 	);
 };
 
