@@ -44,7 +44,7 @@ function getStepContent(step) {
 	switch (step) {
 		case 0:
 			return (
-				<Box>
+				<div>
 					<Box>
 						<Typography variant="subtitle1">Nombre del curso</Typography>
 						<TextField
@@ -126,7 +126,7 @@ function getStepContent(step) {
 							style={{ width: '400px' }}
 						></TextField>
 					</Box>
-				</Box>
+				</div>
 			);
 		case 1:
 			return 'An ad group contains one or more ads which target a shared set of keywords.';
