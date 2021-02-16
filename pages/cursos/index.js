@@ -1,6 +1,8 @@
 import React from 'react';
 import {
 	Box,
+	FormControl,
+	Input,
 	InputAdornment,
 	InputBase,
 	InputLabel,
@@ -43,21 +45,21 @@ export default function Cursos() {
 				</Box>
 				<Box display="flex" flexDirection="row" alignItems="center">
 					<Box mr={2} display="flex" flexDirection="row" alignItems="center">
-						<InputLabel htmlFor="page-size" Id="page-size">
-							Todas las categorias
-						</InputLabel>
-						<Select labelId="page-size" input={<InputBase />}>
-							<MenuItem>Todas las categorias</MenuItem>
-							<MenuItem>Marketing</MenuItem>
-							<MenuItem>Artesanias</MenuItem>
-							<MenuItem>Cocina</MenuItem>
-							<MenuItem>Arte</MenuItem>
-							<MenuItem>Musica</MenuItem>
-							<MenuItem>Deporte</MenuItem>
-							<MenuItem>Negocios</MenuItem>
-							<MenuItem>Tecnologia</MenuItem>
-							<MenuItem>Hobbies</MenuItem>
-						</Select>
+						<FormControl>
+							<InputLabel htmlFor="categorias">Todas las categorias</InputLabel>
+							<Select id="categorias">
+								<MenuItem>Todas las categorias</MenuItem>
+								<MenuItem>Marketing</MenuItem>
+								<MenuItem>Artesanias</MenuItem>
+								<MenuItem>Cocina</MenuItem>
+								<MenuItem>Arte</MenuItem>
+								<MenuItem>Musica</MenuItem>
+								<MenuItem>Deporte</MenuItem>
+								<MenuItem>Negocios</MenuItem>
+								<MenuItem>Tecnologia</MenuItem>
+								<MenuItem>Hobbies</MenuItem>
+							</Select>
+						</FormControl>
 					</Box>
 					<Box mr={2} display="flex" flexDirection="row" alignItems="center">
 						<InputLabel htmlFor="page-size" Id="page-size">
