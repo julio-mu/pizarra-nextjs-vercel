@@ -8,12 +8,22 @@ const PublicHeader = ({ classes }) => {
 		<>
 			<Paper className={classes.wrapper} square variant="outlined">
 				<Link href="/">
-					<Typography>PIZARRA</Typography>
+					<a
+						style={{
+							cursor: 'pointer',
+							textDecoration: 'none',
+							color: '#fcfcfc',
+						}}
+					>
+						<Typography>PIZARRA</Typography>
+					</a>
 				</Link>
 				<Box className={classes.buttons}>
-					<Box p={1} pt={2} pb={2}>
-						<Button variant="text">Cursos</Button>
-					</Box>
+					<Link href="/cursos">
+						<Box p={1} pt={2} pb={2}>
+							<Button variant="text">Cursos</Button>
+						</Box>
+					</Link>
 					<Box p={1} pt={2} pb={2}>
 						<Link href="/loginscreen">
 							<Button variant="text">Ingresar</Button>

@@ -12,6 +12,9 @@ export default (theme) => ({
 		flexDirection: 'row',
 		alignItems: 'center',
 		width: '100%',
+		cursor: 'pointer',
+		textDecoration: 'none',
+		color: '#fcfcfc',
 	},
 	buttonsContainer: {
 		display: 'flex',
@@ -25,6 +28,7 @@ export default (theme) => ({
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'flex-start',
+		paddingLeft: '16px',
 		borderRadius: '0px',
 		'&: hover': {
 			backgroundColor: '#121212',

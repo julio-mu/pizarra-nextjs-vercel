@@ -1,5 +1,5 @@
 import { Box, Typography } from '@material-ui/core';
-import PublicHeader from '../components/PublicHeader';
+import PublicHeader from '../components/PublicHeader/index';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
